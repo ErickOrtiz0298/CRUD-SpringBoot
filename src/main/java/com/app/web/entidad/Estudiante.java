@@ -22,7 +22,11 @@ public class Estudiante {
     @Column(name="email",nullable = false,length = 50,unique=true)
     @Getter@Setter private String email;
 
-
+    public Estudiante(String nombre, String apellido, String email) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.email = email;
+    }
 }
 
 
